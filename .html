@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROTIK HASAN - Official</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c92d2);
+            background-size:400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color:white;
+            text-align:center;
+        }
+
+        @keyframes gradientBG{
+            0%{background-position:0% 50%;}
+            50%{background-position:100% 50%;}
+            100%{background-position:0% 50%;}
+        }
+
+        .card{
+            backdrop-filter: blur(15px);
+            background: rgba(255,255,255,0.1);
+            padding:40px;
+            border-radius:20px;
+            width:350px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0; transform:translateY(30px);}
+            to{opacity:1; transform:translateY(0);}
+        }
+
+        img{
+            width:140px;
+            height:140px;
+            border-radius:50%;
+            border:4px solid white;
+            object-fit:cover;
+            animation: pop 1s ease;
+        }
+
+        @keyframes pop{
+            from{transform:scale(0);}
+            to{transform:scale(1);}
+        }
+
+        h1{
+            margin-top:20px;
+            font-size:28px;
+            letter-spacing:2px;
+        }
+
+        p{
+            font-size:15px;
+            margin-top:10px;
+            opacity:0.8;
+        }
+
+        .links a{
+            display:block;
+            margin:15px 0;
+            padding:12px;
+            background:white;
+            color:#2c5364;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .links a:hover{
+            transform:scale(1.05);
+            background:#e0e0e0;
+        }
+
+        footer{
+            margin-top:20px;
+            font-size:12px;
+            opacity:0.7;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="profile.jpg" alt="Profile">
+        <h1>PROTIK HASAN</h1>
+        <p>Digital Creator | Tech Lover | Bangladesh</p>
+
+        <div class="links">
+            <a href="https://facebook.com/">Facebook</a>
+            <a href="https://instagram.com/">Instagram</a>
+            <a href="https://linkedin.com/">LinkedIn</a>
+        </div>
+
+        <footer>
+            © 2026 PROTIK HASAN
+        </footer>
+    </div>
+
+</body>
+</html>
